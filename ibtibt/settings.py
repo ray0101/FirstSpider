@@ -68,10 +68,13 @@ ITEM_PIPELINES = {
 }
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
 DOWNLOADER_MIDDLEWARES = {
+   'scrapy.contrib.pipeline.images.ImagesPipeline': 1,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
 }
+IMAGES_STORE = "D:\\images"
 ROBOTSTXT_OBEY = False
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 0.25
+#LOG_FILE  ="D:\\1.log"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # AUTOTHROTTLE_ENABLED = True

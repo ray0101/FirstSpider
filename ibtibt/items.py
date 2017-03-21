@@ -11,7 +11,9 @@ import scrapy
 class IbtibtItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    id = scrapy.Field()
     title = scrapy.Field()
+    ibttitle = scrapy.Field()
     ##导演
     director = scrapy.Field()
     ##编剧
@@ -46,4 +48,6 @@ class IbtibtItem(scrapy.Item):
     ##简介
     desc = scrapy.Field()
     ##ibtibt
-    ibtdesc=scrapy.Field()
+    ibtdesc = scrapy.Field()
+    images = scrapy.Field()
+    image_urls = scrapy.Field()
