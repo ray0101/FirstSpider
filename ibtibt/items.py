@@ -51,3 +51,4 @@ class IbtibtItem(scrapy.Item):
     ibtdesc = scrapy.Field()
     images = scrapy.Field()
     image_urls = scrapy.Field()
+    downloadurl=scrapy.Field()
